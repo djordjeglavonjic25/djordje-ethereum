@@ -4,15 +4,21 @@ echo "========================================="
 echo " Započinje praćenje i ažuriranje kodova "
 echo "========================================="
 
-# Funkcija za povlačenje novih izmena sa zvaničnog Ethereum repozitorijuma
+# Funkcija za povlačenje novih izmena sa zvaničnih izvora
 azuriraj_izvor() {
     if [ -d "$1" ]; then
         echo "[+] Provera zvaničnih izmena za folder: $1"
         cd "$1"
         
-        # Ako upstream (originalni izvor) nije podešen, dodajemo ga
+        # Ako upstream (originalni izvor) nije podešen, dodajemo ga na osnovu organizacije
         if ! git remote | grep -q "upstream"; then
-            git remote add upstream "https://github.com/ethereum/$1.git" 2>/dev/null
+            if [ "$1" == "MetaMask-Ekstenzija" ]; then
+                git remote add upstream "https://github.com/MetaMask/metamask-extension.git" 2>/dev/null
+            elif [ "$1" == "MetaMask-Mobilna-Aplikacija" ]; then
+                git remote add upstream "https://github.com/MetaMask/metamask-mobile.git" 2>/dev/null
+            else
+                git remote add upstream "https://github.com/ethereum/$1.git" 2>/dev/null
+            fi
         fi
         
         # Povlačenje i spajanje novih kodova sa zvaničnog repozitorijuma
@@ -30,12 +36,13 @@ azuriraj_izvor() {
     fi
 }
 
-# Spisak svih do sada preuzetih projekata za proveru novih kodova
+# Spisak svih projekata u tvom djordje-ethereum direktorijumu
 projekti=(
-    "eth-rnd-archive" "forkcast" "EIPs" "go-ethereum" "consensus-specs" 
-    "ethereum-org-website" "ethspecify" "esp-website" "beacon-APIs" 
-    "epbs-security-analysis" "hive" "devp2p" "sys-asm" "execution-spec-tests" 
-    "steel" "protocol-prototyping-site" "kohaku" "cryptography-specs"
+    "MetaMask-Ekstenzija" "MetaMask-Mobilna-Aplikacija" "eth-rnd-archive" 
+    "forkcast" "EIPs" "go-ethereum" "consensus-specs" "ethereum-org-website" 
+    "ethspecify" "esp-website" "beacon-APIs" "epbs-security-analysis" "hive" 
+    "devp2p" "sys-asm" "execution-spec-tests" "steel" "protocol-prototyping-site" 
+    "kohaku" "cryptography-specs"
 )
 
 for p in "${projekti[@]}"; do
@@ -46,11 +53,9 @@ echo "-----------------------------------------"
 echo " Snimanje tvojih izmena i slanje na GitHub "
 echo "-----------------------------------------"
 
-# Registrovanje svih lokalnih izmena u kodu, novih fajlova i ažuriranih podovnih foldera
 git add .
 
-# Slanje izmena na tvoj djordje-ethereum repozitorijum u granu Dzen
-if git commit -m "Automatsko praćenje, izmena kodova i osvežavanje Ethereum izvora" 2>/dev/null; then
+if git commit -m "Automatsko pracenje, osvezavanje Ethereum i MetaMask izvora sa slike" 2>/dev/null; then
     echo "[+] Pronađene su nove izmene. Šaljem na GitHub..."
     git push origin Dzen
 else
