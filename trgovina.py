@@ -1,0 +1,1 @@
+from web3 import Web3\n\ndef prati_trgovinu(adresa):\n    web3 = Web3(Web3.HTTPProvider("https://cloudflare-eth.com"))\n    if web3.is_connected():\n        print(f"Blok: {web3.eth.block_number}")\n        print(f"Balans: {web3.from_wei(web3.eth.get_balance(adresa), \"ether\")} ETH")\n\nprati_trgovinu("0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045")
