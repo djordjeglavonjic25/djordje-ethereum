@@ -1,0 +1,1 @@
+print("ForTrade skripta radi!")
