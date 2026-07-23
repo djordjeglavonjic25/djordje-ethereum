@@ -1,0 +1,3 @@
+SerpApi Dashboard Data:
+Dashboard Link: https://serpapi.com/dashboard
+API Key: a88d25ece9c10d6bd11c42e607d51da6ce64cba57408c8a8ee50bb9fad06e377
