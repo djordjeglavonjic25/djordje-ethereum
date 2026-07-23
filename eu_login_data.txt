@@ -1,0 +1,8 @@
+EU Login (ECAS) Account Data:
+First Name: Đorđe
+Last Name: GLAVONJIĆ
+Email: djordje.gl.sa@gmail.com
+Username: n00ls8xi
+UID: n00ls8xi
+Domain: External
+Enrollment Link: ecasenrolment://n00ls8xi/n00ls8xi/UVSNDA7I7LYOIA64IGGVSH7RJN5WEGX2BZ73WLTK5YHBFP3D4QP5BEZW6CCNHM64SKFS32DFKOJTSIOFXSRUY7W72O7ALLXYIZMRR4Q%3D?e=djordje.gl.sa%40gmail.com&d=external&fn=%C4%90or%C4%91e&ln=GLAVONJI%C4%86
