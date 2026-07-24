@@ -1,0 +1,12 @@
+[submodule "tesla-vehicle-command"]
+	path = tesla-vehicle-command
+	url = https://github.com/teslamotors/vehicle-command.git
+[submodule "x-algorithm"]
+	path = x-algorithm
+	url = https://github.com/twitter/the-algorithm.git
+[submodule "xai-grok"]
+	path = xai-grok
+	url = https://github.com/xai-org/grok-1.git
+[submodule "neuralink-datarepo"]
+	path = neuralink-datarepo
+	url = https://github.com/neuralinkcorp/datarepo.git
