@@ -15,7 +15,7 @@ try:
         data = response.json()
         print(f"✅ Najnovije SpaceX lansiranje: {data.get('name')}")
     else:
-        print(f"⚠️ SpaceX API status kod: {response.status_code}")
+        print(f"⚠️ SpaceX API status kod: {response.status_code} (Privremena greška na serveru)")
 except Exception as e:
     print(f"❌ Greška pri konekciji sa SpaceX-om: {e}")
 
