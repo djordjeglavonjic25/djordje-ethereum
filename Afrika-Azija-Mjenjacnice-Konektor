@@ -1,0 +1,25 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Afrika-Azija-Mjenjacnice-Konektor
+
+cat << 'EOF' > Afrika-Azija-Mjenjacnice-Konektor/afrika_azija_mjenjacnice.json
+{
+    "afrika_mjenjacnice_i_servisi": [
+        {"name": "Luno", "link": "luno.com", "desc": "Vodeća platforma za kriptovalute i razmjenu u Južnoj Africi i Nigeriji."},
+        {"name": "Yellow Card", "link": "yellowcard.io", "desc": "Pan-afrička e-mjenjačnica za konverziju u stabilne coine."},
+        {"name": "Flutterwave", "link": "flutterwave.com", "desc": "Vodeći afrički fintech za prekogranična plaćanja i konverziju."},
+        {"name": "M-Pesa", "link": "safaricom.co.ke", "desc": "Najpoznatiji afrički sistem mobilnog novčanika i plaćanja."}
+    ],
+    "azija_mjenjacnice_i_servisi": [
+        {"name": "OKX", "link": "okx.com", "desc": "Globalna kripto berza sa ogromnim tržišnim udjelom u Aziji."},
+        {"name": "Binance", "link": "binance.com", "desc": "Vodeća platforma sa razvijenim P2P mrežama širom Azije."},
+        {"name": "Upbit", "link": "upbit.com", "desc": "Jedna od najvećih južnokorejskih e-mjenjačnica."},
+        {"name": "Ant International", "link": "antgroup.com", "desc": "Azijski gigant za digitalna plaćanja i konverziju valuta."}
+    ]
+}
+EOF
+
+git add Afrika-Azija-Mjenjacnice-Konektor/afrika_azija_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i finansijske servise u Africi i Aziji"
+git push origin japantokio
+echo "Uspješno završeno!"
