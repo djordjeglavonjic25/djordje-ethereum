@@ -1,0 +1,36 @@
+{
+    "timestamp": "2026-07-25 11:18:32",
+    "market": "Asia (Banks & Tech Platforms)",
+    "data": {
+        "ICBC_China": {
+            "ticker": "1398.HK",
+            "close": 7.19,
+            "volume": 95291929
+        },
+        "MUFG_Japan": {
+            "ticker": "8306.T",
+            "close": 3754.0,
+            "volume": 43056500
+        },
+        "DBS_Singapore": {
+            "ticker": "D05.SI",
+            "close": 73.94,
+            "volume": 2772500
+        },
+        "State_Bank_India": {
+            "ticker": "SBIN.NS",
+            "close": 1015.0,
+            "volume": 13797053
+        },
+        "Tencent_WeChat_Parent": {
+            "ticker": "0700.HK",
+            "close": 434.6,
+            "volume": 22959603
+        },
+        "Alibaba_Ant_Parent": {
+            "ticker": "9988.HK",
+            "close": 110.0,
+            "volume": 107488512
+        }
+    }
+}
