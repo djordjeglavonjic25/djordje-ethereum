@@ -1,0 +1,32 @@
+{
+    "ExxonMobil": {
+        "symbol": "XOM",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:30"
+    },
+    "Chevron": {
+        "symbol": "CVX",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:30"
+    },
+    "ConocoPhillips": {
+        "symbol": "COP",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:31"
+    },
+    "Occidental Petroleum": {
+        "symbol": "OXY",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:31"
+    },
+    "EOG Resources": {
+        "symbol": "EOG",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:32"
+    },
+    "Devon Energy": {
+        "symbol": "DVN",
+        "error": "'No time zone found with key America/New_York'",
+        "last_updated": "2026-07-25 09:14:32"
+    }
+}
