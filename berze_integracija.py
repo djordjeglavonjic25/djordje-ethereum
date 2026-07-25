@@ -8,7 +8,8 @@ def prikupi_podatke():
     simboli = {
         "Kina_Alibaba": "BABA",
         "Kina_Tencent": "TCEHY",
-        "Rusija_Gazprom": "OGZPY"
+        "Rusija_Gazprom": "OGZPY",
+        "Evropa_ASML": "ASML"
     }
     
     rezultati = {}

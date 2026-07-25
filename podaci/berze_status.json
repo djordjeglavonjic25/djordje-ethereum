@@ -6,5 +6,9 @@
     "Kina_Tencent": {
         "simbol": "TCEHY",
         "poslednja_cena": 55.58000183105469
+    },
+    "Evropa_ASML": {
+        "simbol": "ASML",
+        "poslednja_cena": 1757.0899658203125
     }
 }
