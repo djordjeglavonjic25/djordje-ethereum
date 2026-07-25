@@ -1,0 +1,26 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Australija-Mjenjacnice-Konektor
+
+cat << 'EOF' > Australija-Mjenjacnice-Konektor/australija_mjenjacnice.json
+{
+    "australija_e_mjenjacnice": [
+        {"name": "CoinSpot", "link": "coinspot.com.au", "desc": "Najveća domaća australijska kripto berza sa sjedištem u Melburnu."},
+        {"name": "Swyftx", "link": "swyftx.com", "desc": "Australijska platforma za trgovanje sa sjedištem u Brizbejnu."},
+        {"name": "Kraken Australia", "link": "kraken.com", "desc": "Globalno vodeća berza prilagođena australijskim ulagačima."},
+        {"name": "Coinbase Australia", "link": "coinbase.com", "desc": "Globalni gigant sa prisustvom i alatima na australijskom tržištu."},
+        {"name": "Independent Reserve", "link": "independentreserve.com", "desc": "Jedna od najstarijih australijskih berzi za fizička lica i fondove."}
+    ],
+    "australija_klasicni_servisi": [
+        {"name": "Wise", "link": "wise.com", "desc": "Digitalni servis za multi-valutne račune i konverziju AUD-a."},
+        {"name": "OFX", "link": "ofx.com", "desc": "Australijska kompanija specijalizovana za velike devizne transakcije."},
+        {"name": "Travelex Australia", "link": "travelex.com.au", "desc": "Lanac fizičkih mjenjačnica na većim australijskim aerodromima."},
+        {"name": "Western Union Australia", "link": "westernunion.com", "desc": "Globalna mreža za prenos gotovine i online uplate."}
+    ]
+}
+EOF
+
+git add Australija-Mjenjacnice-Konektor/australija_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i e-mjenjačnice u Australiji"
+git push origin japantokio
+echo "Uspješno završeno!"
