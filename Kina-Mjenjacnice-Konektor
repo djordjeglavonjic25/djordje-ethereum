@@ -1,0 +1,22 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Kina-Mjenjacnice-Konektor
+
+cat << 'EOF' > Kina-Mjenjacnice-Konektor/kina_mjenjacnice.json
+{
+    "kina_finansijski_i_platni_servisi": [
+        {"name": "Alipay", "link": "alipay.com", "desc": "Vodeća kineska platforma za mobilno plaćanje i digitalne finansijske usluge u vlasništvu Ant Group."},
+        {"name": "WeChat Pay (TenPay)", "link": "tencent.com", "desc": "Sistem mobilnog plaćanja integrisan kroz WeChat, ključan za svakodnevnu digitalnu razmjenu i transakcije u Kini."},
+        {"name": "UnionPay", "link": "unionpayintl.com", "desc": "Nacionalna kineska mreža bankarskih kartica i primarni provajder klasičnih finansijskih poravnanja."}
+    ],
+    "kina_tradicionalne_banke_za_devize": [
+        {"name": "Bank of China", "link": "boc.cn", "desc": "Jedna od vodećih državnih banaka specijalizovana za međunarodne devizne transakcije i konverziju valuta."},
+        {"name": "Industrial and Commercial Bank of China (ICBC)", "link": "icbc.com.cn", "desc": "Najveća banka u Kini sa širokim spektrom usluga deviznog poslovanja."}
+    ]
+}
+EOF
+
+git add Kina-Mjenjacnice-Konektor/kina_mjenjacnice.json
+git commit -m "Dodati podaci za platne servise i mjenjačke sisteme u Kini"
+git push origin japantokio
+echo "Uspješno završeno!"

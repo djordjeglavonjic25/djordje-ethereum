@@ -1,0 +1,27 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Izrael-Mjenjacnice-Konektor
+
+cat << 'EOF' > Izrael-Mjenjacnice-Konektor/izrael_mjenjacnice.json
+{
+    "izrael_civilni_bankarski_servisi": [
+        {"name": "Bank Hapoalim", "link": "hapoalim.co.il", "desc": "Jedna od najvećih banaka sa platformama za devizno poslovanje."},
+        {"name": "Bank Leumi", "link": "leumi.co.il", "desc": "Vodeća banka sa digitalnim servisima za mjenjačke poslove."},
+        {"name": "Israel Discount Bank", "link": "dbank.co.il", "desc": "Usluge devizne razmjene i finansijskog posredovanja."}
+    ],
+    "izrael_civilni_fintech_servisi": [
+        {"name": "Wise", "link": "wise.com", "desc": "Digitalni servis za multi-valutne račune i konverziju šekela."},
+        {"name": "Payoneer", "link": "payoneer.com", "desc": "Servis za primanje i razmjenu internacionalnih valuta za freelancere."},
+        {"name": "eToro", "link": "etoro.com", "desc": "Globalna platforma za online trgovanje nastala u Izraelu."}
+    ],
+    "izrael_vojni_i_drzavni_sektor": [
+        {"name": "Ministarstvo odbrane Izraela (IMOD)", "link": "mod.gov.il", "desc": "Vladin organ nadležan za vojne budžete i međudržavne ugovore."},
+        {"name": "Banka Izraela", "link": "boi.org.il", "desc": "Centralna banka koja kontroliše devizne rezerve i zvanične kurseve."}
+    ]
+}
+EOF
+
+git add Izrael-Mjenjacnice-Konektor/izrael_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i finansijske servise u Izraelu (civilni i vojni sektor)"
+git push origin japantokio
+echo "Uspješno završeno!"
