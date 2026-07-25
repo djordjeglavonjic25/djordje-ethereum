@@ -1,0 +1,24 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Rusija-Mjenjacnice-Konektor
+
+cat << 'EOF' > Rusija-Mjenjacnice-Konektor/rusija_mjenjacnice.json
+{
+    "rusija_e_mjenjacnice": [
+        {"name": "Bybit", "link": "bybit.com", "desc": "Popularna međunarodna kripto berza sa razvijenom P2P platformom za razmjenu u rubljama."},
+        {"name": "BestChange", "link": "bestchange.com", "desc": "Agregator i mjenjački servis za pronalaženje najbolje cijene i provizije."},
+        {"name": "MEXC", "link": "mexc.com", "desc": "Međunarodna berza zastupljena za brzu e-razmjenu."},
+        {"name": "Gate.io", "link": "gate.io", "desc": "Međunarodna platforma za kripto razmjenu."}
+    ],
+    "rusija_tradicionalni_servisi": [
+        {"name": "Sberbank", "link": "sberbank.ru", "desc": "Najveća ruska banka i provider platnih usluga i mjenjačnica."},
+        {"name": "T-Bank", "link": "tbank.ru", "desc": "Digitalna banka sa aplikacijom za mobilnu konverziju i trgovanje."},
+        {"name": "YooMoney", "link": "yoomoney.ru", "desc": "Popularni ruski elektronski novčanik za online plaćanja i razmjenu."}
+    ]
+}
+EOF
+
+git add Rusija-Mjenjacnice-Konektor/rusija_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i e-mjenjačnice u Rusiji"
+git push origin japantokio
+echo "Uspješno završeno!"
