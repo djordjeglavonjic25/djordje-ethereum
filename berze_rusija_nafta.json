@@ -1,0 +1,44 @@
+{
+    "Gazprom": {
+        "symbol": "GAZP.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:28"
+    },
+    "Rosneft": {
+        "symbol": "ROSN.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:29"
+    },
+    "Lukoil": {
+        "symbol": "LKOH.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:29"
+    },
+    "Novatek": {
+        "symbol": "NVTK.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:30"
+    },
+    "Gazprom Neft": {
+        "symbol": "SIBN.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:31"
+    },
+    "Surgutneftegas": {
+        "symbol": "SNGS.ME",
+        "price": null,
+        "previous_close": null,
+        "currency": "RUB",
+        "last_updated": "2026-07-25 09:37:31"
+    }
+}
