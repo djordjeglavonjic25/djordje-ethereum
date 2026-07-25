@@ -6,15 +6,18 @@ import pandas as pd
 
 def prikupi_podatke():
     simboli = {
-        "Kina_Alibaba": "BABA",
-        "Kina_Tencent": "TCEHY",
-        "Rusija_Gazprom": "OGZPY",
-        "Evropa_ASML": "ASML"
+        "Kina_Gitee_Alibaba": "BABA",
+        "Kina_Gitee_Tencent": "TCEHY",
+        "Rusija_Yandex_Gazprom": "OGZPY",
+        "Iran_Gitea_Simbol": "IRAN_PROXY"
     }
     
     rezultati = {}
     for naziv, simbol in simboli.items():
         try:
+            if simbol == "IRAN_PROXY":
+                rezultati[naziv] = {"status": "Lokalna NIIA / Gitea instanca"}
+                continue
             tacka = yf.Ticker(simbol)
             istorija = tacka.history(period="1d")
             if not istorija.empty:

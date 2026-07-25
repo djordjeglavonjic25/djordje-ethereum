@@ -1,14 +1,13 @@
 {
-    "Kina_Alibaba": {
+    "Kina_Gitee_Alibaba": {
         "simbol": "BABA",
         "poslednja_cena": 112.13999938964844
     },
-    "Kina_Tencent": {
+    "Kina_Gitee_Tencent": {
         "simbol": "TCEHY",
         "poslednja_cena": 55.58000183105469
     },
-    "Evropa_ASML": {
-        "simbol": "ASML",
-        "poslednja_cena": 1757.0899658203125
+    "Iran_Gitea_Simbol": {
+        "status": "Lokalna NIIA / Gitea instanca"
     }
 }
