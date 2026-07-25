@@ -1,0 +1,23 @@
+{
+    "NIOC": {
+        "company_name": "National Iranian Oil Company",
+        "sector_role": "Upravljanje resursima nafte i prirodnog gasa",
+        "ownership_structure": "State-Owned Monopoly",
+        "operational_status": "Active / Primary Extraction",
+        "last_updated": "2026-07-25 09:34:48"
+    },
+    "NIGC": {
+        "company_name": "National Iranian Gas Company",
+        "sector_role": "Prerada, transport i distribucija gasa (South Pars)",
+        "ownership_structure": "State-Owned Monopoly",
+        "operational_status": "Active / Midstream & Gas Infrastructure",
+        "last_updated": "2026-07-25 09:34:48"
+    },
+    "NPC": {
+        "company_name": "National Petrochemical Company",
+        "sector_role": "Proizvodnja i izvoz petrohemijskih derivata",
+        "ownership_structure": "State-Owned Subsidiary",
+        "operational_status": "Active / Downstream Petrochemicals",
+        "last_updated": "2026-07-25 09:34:48"
+    }
+}
