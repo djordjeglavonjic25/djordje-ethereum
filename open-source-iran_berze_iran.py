@@ -1,11 +1,13 @@
 import os, json, subprocess, yfinance as yf
 from datetime import datetime
 
+print("=== 1. Osvežavanje otvorenih kodova (Iran) ===")
 os.makedirs("open-source-iran", exist_ok=True)
 if not os.path.exists("open-source-iran/iran-open-data"):
     subprocess.run(["git", "submodule", "add", "https://github.com/iran-open-data/datasets.git", "open-source-iran/iran-open-data"], check=False)
 subprocess.run(["git", "submodule", "update", "--init", "--recursive"], check=False)
 
+print("\n=== 2. Preuzimanje podataka sa berze (TSE / MENA) ===")
 kompanije = {
     "Iran_Khodro_IKCO": "IKCO.TE",
     "Saipa": "SAIPA.TE",
@@ -15,7 +17,6 @@ kompanije = {
 }
 
 podaci = {"datum_azuriranja": str(datetime.now()), "kompanije": {}}
-print(f"--- AŽURIRANJE IRANSKIH BERZI [{datetime.now().strftime('%H:%M:%S')}] ---")
 
 for naziv, symbol in kompanije.items():
     if symbol != "STATE_OWNED":
