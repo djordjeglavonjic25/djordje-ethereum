@@ -1,0 +1,37 @@
+[
+    {
+        "symbol": "0700.HK",
+        "company_name": "Tencent Holdings",
+        "exchange": "HKEX",
+        "updated_at": "2026-07-25 10:07:57",
+        "status": "error"
+    },
+    {
+        "symbol": "9988.HK",
+        "company_name": "Alibaba Group",
+        "exchange": "HKEX",
+        "updated_at": "2026-07-25 10:07:57",
+        "status": "error"
+    },
+    {
+        "symbol": "9888.HK",
+        "company_name": "Baidu, Inc.",
+        "exchange": "HKEX",
+        "updated_at": "2026-07-25 10:07:57",
+        "status": "error"
+    },
+    {
+        "symbol": "0981.HK",
+        "company_name": "SMIC",
+        "exchange": "HKEX",
+        "updated_at": "2026-07-25 10:07:57",
+        "status": "error"
+    },
+    {
+        "symbol": "1810.HK",
+        "company_name": "Xiaomi Corporation",
+        "exchange": "HKEX",
+        "updated_at": "2026-07-25 10:07:57",
+        "status": "error"
+    }
+]
