@@ -1,11 +1,20 @@
 #!/usr/bin/env bash
 
-echo "=== 1. Ažuriranje i sinhronizacija sa GitHub-om ==="
-cd ~/djordje-ethereum || exit
+echo "=================================================="
+echo "=== 1. Ulazak u repozitorijum i sinhronizacija ==="
+echo "=================================================="
+cd ~/djordje-ethereum || exit 1
 git checkout japantokio
 git pull origin japantokio
 
-echo -e "\n=== 2. Generisanje i testiranje berzanske skripte ==="
+echo -e "\n=================================================="
+echo "=== 2. Ažuriranje modula: open-source-kina ======"
+echo "=================================================="
+git submodule update --init --recursive
+
+echo -e "\n=================================================="
+echo "=== 3. Priprema i test skripte: berze_kina.py ===="
+echo "=================================================="
 cat << 'PYEOF' > berze_kina.py
 import yfinance as yf
 import json
@@ -51,9 +60,13 @@ PYEOF
 
 python berze_kina.py
 
-echo -e "\n=== 3. Slanje ažuriranih podataka na GitHub ==="
+echo -e "\n=================================================="
+echo "=== 4. Slanje svih izmena na GitHub (japantokio) =="
+echo "=================================================="
 git add .
-git commit -m "Automatsko testiranje i ažuriranje berzi: $(date)"
+git commit -m "Testirano i ažurirano: open-source-kina, berze_kina.py i pokreni_berze.sh ($(date))" || echo "Nema novih izmena za commit."
 git push origin japantokio
 
-echo "=== Sve skripte uspešno testirane i puštene u rad! ==="
+echo -e "\n=================================================="
+echo "=== SVE TRI SKRIPTE SU TESTIRANE I U RADU! ==="
+echo "=================================================="
