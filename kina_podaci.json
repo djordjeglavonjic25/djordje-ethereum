@@ -3,120 +3,120 @@
         "kod":"300414",
         "naziv":"中光防雷",
         "cena":11.27,
-        "promena_procenat":20.02
+        "promena":20.02
     },
     {
         "kod":"300480",
         "naziv":"光力科技",
         "cena":31.66,
-        "promena_procenat":20.02
+        "promena":20.02
     },
     {
         "kod":"688237",
         "naziv":"超卓航科",
         "cena":65.45,
-        "promena_procenat":20.0
+        "promena":20.0
     },
     {
         "kod":"688622",
         "naziv":"*ST禾信",
         "cena":101.93,
-        "promena_procenat":20.0
+        "promena":20.0
     },
     {
         "kod":"301583",
         "naziv":"托伦斯",
         "cena":174.0,
-        "promena_procenat":20.0
+        "promena":20.0
     },
     {
         "kod":"301234",
         "naziv":"五洲医疗",
         "cena":58.75,
-        "promena_procenat":20.0
+        "promena":20.0
     },
     {
         "kod":"300214",
         "naziv":"日科化学",
         "cena":11.86,
-        "promena_procenat":15.59
+        "promena":15.59
     },
     {
         "kod":"688151",
         "naziv":"华强科技",
         "cena":16.82,
-        "promena_procenat":14.81
+        "promena":14.81
     },
     {
         "kod":"301535",
         "naziv":"浙江华远",
         "cena":16.41,
-        "promena_procenat":14.36
+        "promena":14.36
     },
     {
         "kod":"688146",
         "naziv":"中船特气",
         "cena":245.67,
-        "promena_procenat":14.27
+        "promena":14.27
     },
     {
         "kod":"301067",
         "naziv":"显盈科技",
         "cena":25.19,
-        "promena_procenat":13.78
+        "promena":13.78
     },
     {
         "kod":"301122",
         "naziv":"采纳股份",
         "cena":28.66,
-        "promena_procenat":12.39
+        "promena":12.39
     },
     {
         "kod":"300951",
         "naziv":"博硕科技",
         "cena":50.59,
-        "promena_procenat":10.94
+        "promena":10.94
     },
     {
         "kod":"002303",
         "naziv":"美盈森",
         "cena":4.57,
-        "promena_procenat":10.12
+        "promena":10.12
     },
     {
         "kod":"002388",
         "naziv":"新亚制程",
         "cena":4.36,
-        "promena_procenat":10.1
+        "promena":10.1
     },
     {
         "kod":"002300",
         "naziv":"太阳电缆",
         "cena":7.1,
-        "promena_procenat":10.08
+        "promena":10.08
     },
     {
         "kod":"000670",
         "naziv":"盈方微",
         "cena":6.34,
-        "promena_procenat":10.07
+        "promena":10.07
     },
     {
         "kod":"600617",
         "naziv":"国新能源",
         "cena":3.39,
-        "promena_procenat":10.06
+        "promena":10.06
     },
     {
         "kod":"002298",
         "naziv":"中电鑫龙",
         "cena":8.1,
-        "promena_procenat":10.05
+        "promena":10.05
     },
     {
         "kod":"000417",
         "naziv":"合百集团",
         "cena":6.36,
-        "promena_procenat":10.03
+        "promena":10.03
     }
 ]
