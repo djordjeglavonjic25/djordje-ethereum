@@ -1,0 +1,16 @@
+{
+    "timestamp": "2026-07-25 11:30:41",
+    "market": "Africa (Banks & Mobile Money Infrastructure)",
+    "data": {
+        "Standard_Bank_Group": {
+            "ticker": "SBK.JO",
+            "close": 32017.0,
+            "volume": 1652268
+        },
+        "FirstRand": {
+            "ticker": "FSR.JO",
+            "close": 9587.0,
+            "volume": 6936455
+        }
+    }
+}
