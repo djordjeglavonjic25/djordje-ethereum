@@ -2,16 +2,16 @@
     "PetroChina": {
         "symbol": "0857.HK",
         "error": "'No time zone found with key Asia/Hong_Kong'",
-        "last_updated": "2026-07-25 09:28:46"
+        "last_updated": "2026-07-25 09:30:47"
     },
     "Sinopec": {
         "symbol": "0386.HK",
         "error": "'No time zone found with key Asia/Hong_Kong'",
-        "last_updated": "2026-07-25 09:28:46"
+        "last_updated": "2026-07-25 09:30:47"
     },
     "CNOOC": {
         "symbol": "0883.HK",
         "error": "'No time zone found with key Asia/Hong_Kong'",
-        "last_updated": "2026-07-25 09:28:47"
+        "last_updated": "2026-07-25 09:30:47"
     }
 }
