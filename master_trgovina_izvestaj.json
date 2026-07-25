@@ -1,0 +1,81 @@
+{
+    "timestamp": "2026-07-25 11:43:03",
+    "system": "Master Global E-Commerce & Market Intelligence",
+    "markets_data": {
+        "SAD": {
+            "JPMorgan": {
+                "ticker": "JPM",
+                "close": 353.2099914550781,
+                "volume": 7513084
+            },
+            "PayPal": {
+                "ticker": "PYPL",
+                "close": 56.150001525878906,
+                "volume": 10660140
+            }
+        },
+        "Evropa": {
+            "BNP_Paribas": {
+                "ticker": "BNP.PA",
+                "close": 105.91999816894531,
+                "volume": 1571440
+            },
+            "Adyen": {
+                "ticker": "ADYEN.AS",
+                "close": 801.0,
+                "volume": 94757
+            }
+        },
+        "Azija": {
+            "ICBC": {
+                "ticker": "1398.HK",
+                "close": 7.190000057220459,
+                "volume": 95291929
+            },
+            "Tencent": {
+                "ticker": "0700.HK",
+                "close": 434.6000061035156,
+                "volume": 22959603
+            }
+        },
+        "Rusija": {
+            "Sberbank": {
+                "ticker": "SBER.ME",
+                "status": "No data / Local system"
+            },
+            "T_Bank": {
+                "ticker": "TCSG.ME",
+                "status": "No data / Local system"
+            }
+        },
+        "Iran": {
+            "TSE_Proxy": {
+                "ticker": "IRNX.X",
+                "status": "No data / Local system"
+            }
+        },
+        "Afrika": {
+            "Standard_Bank": {
+                "ticker": "SBK.JO",
+                "close": 32017.0,
+                "volume": 1652268
+            },
+            "Safaricom": {
+                "ticker": "SCOM.NR",
+                "status": "No data / Local system"
+            }
+        },
+        "Australija": {
+            "CBA": {
+                "ticker": "CBA.AX",
+                "close": 174.02999877929688,
+                "volume": 1852922
+            },
+            "Payoneer": {
+                "ticker": "PAYO",
+                "close": 7.119999885559082,
+                "volume": 1292055
+            }
+        }
+    }
+}
