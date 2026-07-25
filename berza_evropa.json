@@ -1,5 +1,31 @@
 {
-    "timestamp": "2026-07-25 11:11:46",
+    "timestamp": "2026-07-25 11:14:31",
     "market": "European Union (Banks & Fintech)",
-    "data": {}
+    "data": {
+        "BNP_Paribas": {
+            "ticker": "BNP.PA",
+            "close": 105.92,
+            "volume": 1571440
+        },
+        "Banco_Santander": {
+            "ticker": "SAN.MC",
+            "close": 11.98,
+            "volume": 18957635
+        },
+        "Deutsche_Bank": {
+            "ticker": "DBK.DE",
+            "close": 30.59,
+            "volume": 2387279
+        },
+        "UniCredit": {
+            "ticker": "UCG.MI",
+            "close": 80.43,
+            "volume": 5273376
+        },
+        "Adyen": {
+            "ticker": "ADYEN.AS",
+            "close": 801.0,
+            "volume": 94757
+        }
+    }
 }
