@@ -1,0 +1,26 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p EU-Mjenjacnice-Konektor
+
+cat << 'EOF' > EU-Mjenjacnice-Konektor/eu_mjenjacnice.json
+{
+    "eu_e_mjenjacnice": [
+        {"name": "Bitpanda", "link": "bitpanda.com", "desc": "Vodeća evropska platforma za investiranje sa sjedištem u Beču."},
+        {"name": "Bybit EU", "link": "bybit.com", "desc": "Evropski ogranak mjenjačnice sa sjedištem u Beču za brze evrske transakcije."},
+        {"name": "Bitvavo", "link": "bitvavo.com", "desc": "Najpopularnija regionalna e-mjenjačnica iz Amsterdama sa niskim provizijama."},
+        {"name": "Kraken EU", "link": "kraken.com", "desc": "Regulisani entitet za EU tržište sa podrškom za SEPA uplate."},
+        {"name": "Binance Europe", "link": "binance.com", "desc": "Binance poslovanje u EU usklađeno sa MiCA propisima."}
+    ],
+    "eu_klasicne_mjenjacnice_i_servisi": [
+        {"name": "Wise", "link": "wise.com", "desc": "Evropski lider u digitalnom transferu novca i multi-valutnim računima."},
+        {"name": "Revolut", "link": "revolut.com", "desc": "Digitalna banka i e-mjenjačnica za konverziju po međubankarskom kursu."},
+        {"name": "N26", "link": "n26.com", "desc": "Potpuno digitalna banka sa sjedištem u Njemačkoj za evrozonu."},
+        {"name": "Travelex Europe", "link": "travelex.com", "desc": "Lanac fizičkih mjenjačnica na većim evropskim aerodromima."}
+    ]
+}
+EOF
+
+git add EU-Mjenjacnice-Konektor/eu_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i e-mjenjačnice u EU"
+git push origin japantokio
+echo "Uspješno završeno!"
