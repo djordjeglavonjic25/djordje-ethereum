@@ -1,0 +1,31 @@
+{
+    "timestamp": "2026-07-25 11:35:10",
+    "market": "Australia (Big Four Banks & Services)",
+    "data": {
+        "Commonwealth_Bank_CBA": {
+            "ticker": "CBA.AX",
+            "close": 174.03,
+            "volume": 1852922
+        },
+        "Westpac_Banking": {
+            "ticker": "WBC.AX",
+            "close": 37.14,
+            "volume": 3498060
+        },
+        "National_Australia_Bank_NAB": {
+            "ticker": "NAB.AX",
+            "close": 40.39,
+            "volume": 3829590
+        },
+        "ANZ_Group": {
+            "ticker": "ANZ.AX",
+            "close": 36.47,
+            "volume": 4049105
+        },
+        "Payoneer": {
+            "ticker": "PAYO",
+            "close": 7.12,
+            "volume": 1292055
+        }
+    }
+}
