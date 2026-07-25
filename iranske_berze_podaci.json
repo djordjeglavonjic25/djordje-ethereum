@@ -1,0 +1,30 @@
+{
+  "datum_azuriranja": "2026-07-25 08:52:55.993459",
+  "kompanije": {
+    "Iran_Khodro_IKCO": {
+      "symbol": "IKCO.TE",
+      "trenutna_cena": "Pratnja aktivna (TSE)",
+      "valuta": "IRR"
+    },
+    "Saipa": {
+      "symbol": "SAIPA.TE",
+      "trenutna_cena": "Pratnja aktivna (TSE)",
+      "valuta": "IRR"
+    },
+    "Mobarakeh_Steel": {
+      "symbol": "FOLD.TE",
+      "trenutna_cena": "Pratnja aktivna (TSE)",
+      "valuta": "IRR"
+    },
+    "NIOC_National_Iranian_Oil": {
+      "symbol": "STATE_OWNED",
+      "trenutna_cena": "Državni gigant",
+      "valuta": "N/A"
+    },
+    "NPC_National_Petrochemical": {
+      "symbol": "STATE_OWNED",
+      "trenutna_cena": "Državni gigant",
+      "valuta": "N/A"
+    }
+  }
+}
