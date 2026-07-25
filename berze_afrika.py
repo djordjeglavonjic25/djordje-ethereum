@@ -1,49 +1,47 @@
-import yfinance as yf
-import json
-import os
 from datetime import datetime
+import json
+import yfinance as yf
 
-# Lista afričkih kompanija (JSE & ostale berze - IT & Nafta/Gas)
-tickers = {
-    "Prosus": "PRX.JO",
-    "MTN Group": "MTN.JO",
-    "Vodacom Group": "VOD.JO",
-    "Sasol": "SOL.JO",
-    "Seplat Energy": "SEPL.L",
-    "Oando": "OANDO.LG"
-}
+CUSTOM_AUTORIZACIONI_KOD = "djordje2026"
 
-data = {
-    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "kompanije": {}
-}
 
-print("Preuzimanje podataka sa afričkih berzi (JSE, LSE, NSE)...")
+def autorizacija():
+  uneseni_kod = input(
+      "Unesi custom autorizacioni kod za pokretanje berzanske skripte: "
+  )
+  if uneseni_kod == CUSTOM_AUTORIZACIONI_KOD:
+    print("Autorizacija uspešna! Pokrećem prikupljanje podataka...")
+    return True
+  else:
+    print("Greška: Pogrešan autorizacioni kod!")
+    return False
 
-for name, symbol in tickers.items():
-    try:
-        ticker = yf.Ticker(symbol)
-        info = ticker.fast_info
-        
-        price = info.last_price
-        prev_close = info.previous_close
-        change = price - prev_close if price and prev_close else 0
-        change_pct = (change / prev_close) * 100 if prev_close else 0
-        
-        data["kompanije"][name] = {
-            "simbol": symbol,
-            "cena": round(price, 2) if price else None,
-            "valuta": getattr(info, 'currency', 'ZAR'),
-            "promena": round(change, 2),
-            "promena_procenat": f"{round(change_pct, 2)}%"
-        }
-        print(f"[OK] {name} ({symbol}): {price}")
-    except Exception as e:
-        print(f"[GREŠKA] Nije moguće preuzeti podatke za {name}: {e}")
 
-# Čuvanje podataka u JSON fajl
-output_file = "berze_afrika_podaci.json"
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=4)
+if __name__ == "__main__":
+  if autorizacija():
+    simboli = {"FTSE_JSE_Top_40": "^JTOPI.JO", "EGX_30": "^EGX30.CA"}
 
-print(f"\nPodaci su uspešno sačuvani u {output_file}")
+    rezultati = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "trziste": "Afrika",
+        "podaci": {},
+    }
+
+    for naziv, simbol in simboli.items():
+      try:
+        t = yf.Ticker(simbol)
+        hist = t.history(period="1d")
+        if not hist.empty:
+          trenutna_cena = hist["Close"].iloc[-1]
+          rezultati["podaci"][naziv] = {
+              "simbol": simbol,
+              "cena": round(float(trenutna_cena), 2),
+          }
+      except Exception as e:
+        print(f"Greska za {naziv}: {e}")
+
+    fajl_naziv = "berze_afrika_podaci.json"
+    with open(fajl_naziv, "w", encoding="utf-8") as f:
+      json.dump(rezultati, f, ensure_ascii=False, indent=4)
+
+    print(f"Uspesno sacuvano u {fajl_naziv}")
