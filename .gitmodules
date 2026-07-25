@@ -10,3 +10,6 @@
 [submodule "neuralink-datarepo"]
 	path = neuralink-datarepo
 	url = https://github.com/neuralinkcorp/datarepo.git
+[submodule "open-source-rusija/sber-kandinsky"]
+	path = open-source-rusija/sber-kandinsky
+	url = https://github.com/ai-forever/Kandinsky-3.git
