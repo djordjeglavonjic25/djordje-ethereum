@@ -3,35 +3,35 @@
         "symbol": "AAPL",
         "company_name": "Apple Inc.",
         "exchange": "NASDAQ",
-        "updated_at": "2026-07-25 09:42:15",
+        "updated_at": "2026-07-25 09:47:13",
         "status": "error"
     },
     {
         "symbol": "MSFT",
         "company_name": "Microsoft Corporation",
         "exchange": "NASDAQ",
-        "updated_at": "2026-07-25 09:42:15",
+        "updated_at": "2026-07-25 09:47:13",
         "status": "error"
     },
     {
         "symbol": "NVDA",
         "company_name": "NVIDIA Corporation",
         "exchange": "NASDAQ",
-        "updated_at": "2026-07-25 09:42:15",
+        "updated_at": "2026-07-25 09:47:13",
         "status": "error"
     },
     {
         "symbol": "GOOGL",
         "company_name": "Alphabet Inc.",
         "exchange": "NASDAQ",
-        "updated_at": "2026-07-25 09:42:15",
+        "updated_at": "2026-07-25 09:47:13",
         "status": "error"
     },
     {
         "symbol": "META",
         "company_name": "Meta Platforms, Inc.",
         "exchange": "NASDAQ",
-        "updated_at": "2026-07-25 09:42:15",
+        "updated_at": "2026-07-25 09:47:13",
         "status": "error"
     }
 ]
