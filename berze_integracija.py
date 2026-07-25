@@ -6,10 +6,12 @@ import pandas as pd
 
 def prikupi_podatke():
     simboli = {
+        "SAD_GitLab_Bitbucket": "MSFT",
+        "EU_Codeberg_Forgejo": "ASML",
         "Kina_Gitee_Alibaba": "BABA",
         "Kina_Gitee_Tencent": "TCEHY",
-        "Rusija_Yandex_Gazprom": "OGZPY",
-        "Iran_Gitea_Simbol": "IRAN_PROXY"
+        "Rusija_GitFlic_Gazprom": "OGZPY",
+        "Iran_Gitea_NIIA": "IRAN_PROXY"
     }
     
     rezultati = {}

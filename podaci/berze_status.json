@@ -1,4 +1,12 @@
 {
+    "SAD_GitLab_Bitbucket": {
+        "simbol": "MSFT",
+        "poslednja_cena": 381.70001220703125
+    },
+    "EU_Codeberg_Forgejo": {
+        "simbol": "ASML",
+        "poslednja_cena": 1757.0899658203125
+    },
     "Kina_Gitee_Alibaba": {
         "simbol": "BABA",
         "poslednja_cena": 112.13999938964844
@@ -7,7 +15,7 @@
         "simbol": "TCEHY",
         "poslednja_cena": 55.58000183105469
     },
-    "Iran_Gitea_Simbol": {
+    "Iran_Gitea_NIIA": {
         "status": "Lokalna NIIA / Gitea instanca"
     }
 }
