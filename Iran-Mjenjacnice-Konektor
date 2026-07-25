@@ -1,0 +1,20 @@
+cd ~/djordje-ethereum || cd /sdcard/djordje-ethereum
+git checkout japantokio || git checkout -b japantokio
+mkdir -p Iran-Mjenjacnice-Konektor
+
+cat << 'EOF' > Iran-Mjenjacnice-Konektor/iran_mjenjacnice.json
+{
+    "iran_e_mjenjacnice": [
+        {"name": "Nobitex", "link": "nobitex.ir", "desc": "Najveća iranska kripto berza za konverziju u tomane i digitalnu imovinu."},
+        {"name": "Sarmayex", "link": "sarmayex.com", "desc": "Jedna od prvih platformi i mjenjačnica digitalnih valuta u Iranu."}
+    ],
+    "iran_kursevi_i_servisi": [
+        {"name": "Bonbast", "link": "bon-bast.com", "desc": "Glavni informativni portal za praćenje slobodnog tržišnog kursa iranskog rijala (Tomana)."}
+    ]
+}
+EOF
+
+git add Iran-Mjenjacnice-Konektor/iran_mjenjacnice.json
+git commit -m "Dodati podaci za mjenjačnice i servise u Iranu"
+git push origin japantokio
+echo "Uspješno završeno!"
